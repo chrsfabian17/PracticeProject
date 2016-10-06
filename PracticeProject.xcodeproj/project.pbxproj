@@ -12,6 +12,7 @@
 		DA4F14611DA687B6003757D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4F145F1DA687B6003757D5 /* Main.storyboard */; };
 		DA4F14631DA687B6003757D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4F14621DA687B6003757D5 /* Assets.xcassets */; };
 		DA4F14661DA687B6003757D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4F14641DA687B6003757D5 /* LaunchScreen.storyboard */; };
+		DAC49CE41DA6ACD7005B1D23 /* BackPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC49CE31DA6ACD7005B1D23 /* BackPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DA4F14621DA687B6003757D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA4F14651DA687B6003757D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4F14671DA687B6003757D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC49CE31DA6ACD7005B1D23 /* BackPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DA4F14621DA687B6003757D5 /* Assets.xcassets */,
 				DA4F14641DA687B6003757D5 /* LaunchScreen.storyboard */,
 				DA4F14671DA687B6003757D5 /* Info.plist */,
+				DAC49CE31DA6ACD7005B1D23 /* BackPageViewController.swift */,
 			);
 			path = PracticeProject;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4F145E1DA687B6003757D5 /* ViewController.swift in Sources */,
+				DAC49CE41DA6ACD7005B1D23 /* BackPageViewController.swift in Sources */,
 				DA4F145C1DA687B6003757D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +290,7 @@
 				DA4F146C1DA687B6003757D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
