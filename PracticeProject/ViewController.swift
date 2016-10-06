@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nePageButton: UIButton!
     @IBOutlet weak var myDatePicker: UIDatePicker!
     @IBOutlet weak var selectedDate: UILabel!
     override func viewDidLoad() {
@@ -25,13 +26,17 @@ class ViewController: UIViewController {
     
     @IBAction func datePickerAction(sender: AnyObject)
     {
-        var dateFormatter = NSDateFormatter()
+        let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        var strDate = dateFormatter.stringFromDate(myDatePicker.date)
+        let strDate = dateFormatter.stringFromDate(myDatePicker.date)
         self.selectedDate.text = strDate
 
     }
 
+    @IBAction func toNextPage(sender: UIButton)
+    {
+        
+    }
 }
 
 

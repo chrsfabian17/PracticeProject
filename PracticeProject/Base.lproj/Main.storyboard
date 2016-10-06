@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9w-M2-SdD">
+                                <rect key="frame" x="235" y="63" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Imt-gN-kHY">
                                 <rect key="frame" x="0.0" y="391" width="600" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="497453016.47586399">
@@ -26,23 +32,47 @@
                                     <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="aKJ-hC-slZ"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9w-M2-SdD">
-                                <rect key="frame" x="235" y="63" width="131" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-Sz-A4F">
+                                <rect key="frame" x="240" y="151" width="121" height="30"/>
+                                <color key="backgroundColor" red="0.34273768832525098" green="1" blue="0.66979486100591612" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="New Page">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toNextPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxm-uj-Dbn"/>
+                                    <segue destination="F0x-gf-RMo" kind="show" identifier="toNextPage" id="LsS-Qy-TYj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="myDatePicker" destination="Imt-gN-kHY" id="DCG-HI-6Re"/>
+                        <outlet property="nePageButton" destination="qwZ-Sz-A4F" id="1b7-G7-S6S"/>
                         <outlet property="selectedDate" destination="p9w-M2-SdD" id="FjG-jS-3Dz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="12x-OR-HKS">
+            <objects>
+                <viewController id="F0x-gf-RMo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lBk-Ac-lMy"/>
+                        <viewControllerLayoutGuide type="bottom" id="D5t-jw-fEd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="85V-Is-3C7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raf-uU-3Sx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="422"/>
         </scene>
     </scenes>
 </document>
