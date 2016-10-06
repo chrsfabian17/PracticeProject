@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var nePageButton: UIButton!
+    @IBOutlet weak var newPageButton2: UIButton!
     @IBOutlet weak var myDatePicker: UIDatePicker!
     @IBOutlet weak var selectedDate: UILabel!
     override func viewDidLoad() {

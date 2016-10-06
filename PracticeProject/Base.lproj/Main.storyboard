@@ -43,18 +43,55 @@
                                     <segue destination="F0x-gf-RMo" kind="show" identifier="toNextPage" id="LsS-Qy-TYj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-NX-hcS">
+                                <rect key="frame" x="240" y="224" width="113" height="30"/>
+                                <color key="backgroundColor" red="0.37710145424355968" green="1" blue="0.66638303324255121" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="New Page">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Kx3-Dp-dN9" kind="show" id="aah-R4-iBL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="myDatePicker" destination="Imt-gN-kHY" id="DCG-HI-6Re"/>
                         <outlet property="nePageButton" destination="qwZ-Sz-A4F" id="1b7-G7-S6S"/>
+                        <outlet property="newPageButton2" destination="vbK-NX-hcS" id="1uD-qJ-pGc"/>
                         <outlet property="selectedDate" destination="p9w-M2-SdD" id="FjG-jS-3Dz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R0j-aK-dBa">
+            <objects>
+                <viewController id="Kx3-Dp-dN9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cs4-1q-TTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="2jE-Ba-bLv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m5h-b7-pF1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yF-Qy-B89">
+                                <rect key="frame" x="201" y="83" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8VJ-If-4sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="1103"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="12x-OR-HKS">
